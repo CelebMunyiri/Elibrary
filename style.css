@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: flex;
+}
+.nav ul li {
+  float: left;
+  color: blue;
+  font-size: 20px;
+  margin: 10px;
+  list-style: none;
+  background-color: aliceblue;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(56, 150, 233);
+}
+.color {
+  height: 40px;
+  width: 100px;
+  margin-top: 15px;
+}
