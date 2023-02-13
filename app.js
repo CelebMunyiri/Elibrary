@@ -23,3 +23,4 @@ buttonColor.addEventListener("click", () => {
 
   localStorage.setItem("theme", currentTheme);
 });
+
