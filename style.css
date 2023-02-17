@@ -24,6 +24,8 @@ body {
   align-items: center;
   background: #3474e6;
   color: #fff;
+  flex-shrink: 1;
+  position: sticky;
 }
 .search-bar {
   height: 40px;
@@ -33,6 +35,7 @@ body {
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
+  flex-shrink: 1;
 }
 .login,
 .signup {
@@ -42,17 +45,23 @@ body {
 .nav {
   height: 100px;
   background-color: #a1c3ff;
+  display: flex;
+  position: sticky;
 }
 .nav ul {
   display: flex;
   justify-content: space-between;
-  align-content: center;
 }
 .nav ul li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
 
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 .section {
   margin: 0 auto;
@@ -69,4 +78,5 @@ body {
   width: 200px;
   background-color: aqua;
   margin: 10px;
+  flex-shrink: 1;
 }
