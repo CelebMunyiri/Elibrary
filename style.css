@@ -32,33 +32,45 @@ body {
   width: 350px;
   text-align: center;
 
-  border-radius: 8px;
+  border-radius: 0.75rem;
   font-size: 16px;
   font-weight: bold;
+  flex-shrink: 1;
+  border: none;
+}
+.let {
+  margin-right: 5px;
+}
+.header h1 {
+  margin-left: 10px;
   flex-shrink: 1;
 }
 .login,
 .signup {
   width: 120px;
   height: 40px;
+  border: none;
+  flex-shrink: 1;
+  border-radius: 0.5rem;
 }
 .nav {
   height: 100px;
   background-color: #a1c3ff;
   display: flex;
   position: sticky;
+  flex-shrink: 1;
 }
 .nav ul {
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
 }
 .nav ul li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 20px;
-
   list-style: none;
+  margin: auto;
 }
 a {
   text-decoration: none;
