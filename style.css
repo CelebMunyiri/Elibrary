@@ -45,6 +45,7 @@ body {
   margin-left: 10px;
   flex-shrink: 1;
 }
+
 .login,
 .signup {
   width: 120px;
@@ -84,11 +85,21 @@ a {
   flex-wrap: wrap;
 }
 .book {
-  border: 1px solid red;
+  border-radius: 0.5rem;
+  border: none;
 
   height: 200px;
   width: 200px;
   background-color: aqua;
   margin: 10px;
   flex-shrink: 1;
+  box-shadow: 2px salmon;
+}
+.book:hover {
+  height: 220px;
+  width: 220px;
+}
+.book img {
+  height: 100px;
+  width: 100px;
 }

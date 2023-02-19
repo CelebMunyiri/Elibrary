@@ -23,4 +23,31 @@ buttonColor.addEventListener("click", () => {
 
   localStorage.setItem("theme", currentTheme);
 });
+//const downloads = document.querySelector(".downloads");
+//const read = document.querySelector(".read");
+//const download = document.querySelector(".download");
+var downloadButtons = document.querySelectorAll(".download");
+var readButtons = document.querySelectorAll(".read");
+var downloadsList = document.querySelector(".downloads");
 
+downloadButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    var bookTitle = this.parentNode.parentNode.querySelector("h2").textContent;
+    var downloadLink = document.createElement("a");
+    downloadLink.textContent = bookTitle;
+    downloadLink.href = "#";
+    downloadLink.addEventListener("click", function () {
+      alert("Book downloaded");
+    });
+    var listItem = document.createElement("li");
+    listItem.appendChild(downloadLink);
+    downloadsList.appendChild(listItem);
+  });
+});
+
+readButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    var bookTitle = this.parentNode.parentNode.querySelector("h2").textContent;
+    alert("Reading " + bookTitle);
+  });
+});
