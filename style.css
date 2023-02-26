@@ -24,8 +24,6 @@ body {
   align-items: center;
   background: #3474e6;
   color: #fff;
-  flex-shrink: 1;
-  position: sticky;
 }
 .search-bar {
   height: 40px;
@@ -58,8 +56,6 @@ body {
   height: 100px;
   background-color: #a1c3ff;
   display: flex;
-  position: sticky;
-  flex-shrink: 1;
 }
 .nav ul {
   display: flex;
@@ -102,4 +98,18 @@ a {
 .book img {
   height: 100px;
   width: 100px;
+}
+.magazines {
+  border: 2px solid red;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.magazine {
+  height: 300px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 0.4rem;
 }

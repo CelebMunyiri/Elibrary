@@ -1,9 +1,9 @@
-const express = require('express')
-const path=require('path')
-const app = express()
+const express = require("express");
+const path = require("path");
+const app = express();
 
-app.use('/',express.static(path.join(_dirname,'static')))
+app.use("/", express.static(path.join(_dirname, "static")));
 
-app.listen(9999,()=>{
-    console.log(`Server up at 9999`)
-})
+app.listen(9999, () => {
+  console.log(`Server up at 9999`);
+});
