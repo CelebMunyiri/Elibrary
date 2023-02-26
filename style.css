@@ -91,16 +91,21 @@ a {
   flex-shrink: 1;
   box-shadow: 2px salmon;
 }
-.book:hover {
-  height: 220px;
-  width: 220px;
-}
+
 .book img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 180px;
+}
+.book {
+  display: flex;
+  justify-content: center;
+}
+.download,
+.read {
+  height: 20px;
+  width: 65px;
 }
 .magazines {
-  border: 2px solid red;
   height: 400px;
   display: flex;
   justify-content: space-evenly;
