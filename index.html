@@ -2,99 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AbdulRaheem eLibrary</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
   </head>
-  <body id="body">
-    <section class="section">
-      <div class="container">
-        <header class="header">
-          <h1>
-            ARDMLibrary
-            <i class="material-icons">&#xe02f;</i>
-          </h1>
-          <input class="search-bar" type="search" placeholder="search" />
-          <div class="let">
-            <button class="login"><a href="static/login form.html">Login</a></button>
+  <body>
+    <h1>Welcome to My Website</h1>
 
-            <button class="signup">SignUp</button>
-          </div>
-        </header>
-        <nav class="nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Magazines</a></li>
-            <li><a href="#">Newspapers</a></li>
-            <li>Authors</li>
-        <li class="downloads"><a href="">Downloads</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section class="sections">
-      <div class="book">
-        <a
-          href="Book-1.pdf"
-          onclick="window.open('Book-1.pdf','_blank','fullscreen=yes');"
-          >Book</a>
-      </div>
-      <div class="book"></div>
-      </div>
-      <div class="book"><a href="Book-2.pdf"><h4>Book 2</h4><img src="Bestpic.jpeg"></a> 
-        
-        <div class="buttons">
-          <button class="download">Download</button>
-          <button class="read">Read</button></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div>
+    <form id="register-form" action="/register" method="post">
+      <h2>Register</h2>
+      <p>Enter Name<input type="text" name="name" placeholder="name" /></p>
+      <p>
+        Enter email adrress:<input type="email" name="email" placeholder="" />
+      </p>
+      <p>Enter Password:<input type="password" placeholder="" /></p>
 
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"><button class="download">Download</button>
-        <button class="read">Read</button></div></div></div>
-      <div class="book"></div>
-        
-    </section>
-    <h2>Magazines</h2>
-    <section class="sections magazines">
-      
-      <div class="magazine"></div>
-      <div class="magazine"></div>
-      <div class="magazine"></div>
-      <div class="magazine"></div>
-      <div class="magazine"></div>
-      <div class="magazine"></div>
-      
-    
-
-    </section>
-
-    <button class="color">Dark Mode</button>
-    <script src="app.js"></script>
+      <button type="submit">Register</button>
+    </form>
   </body>
 </html>
